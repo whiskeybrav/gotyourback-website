@@ -1,0 +1,35 @@
+{
+  "name": "gotyourback-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:whiskeybrav/gotyourback-website.git",
+  "author": "William Barkoff <william@barkoffusa.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.2",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "bulma": "^0.9.1",
+    "framer-motion": "^3.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
