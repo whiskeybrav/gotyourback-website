@@ -30,9 +30,14 @@ jobs:
         continue-on-error: true
       
       - name: Code style fixes
+        id: code-style-fixes
         if: failure()
         run: yarn lint:fix
         continue-on-error: true
+      
+      - name: Code style PR
+        if: steps.code-style-fixes.conclusion != 'skipped'
+        run: "echo TODO: implement"
       
       - name: Build
         run: yarn build
