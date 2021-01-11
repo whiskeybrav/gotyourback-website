@@ -5,10 +5,6 @@ import * as util from "../../util";
 import pushup1 from "../../img/pushups/pushup1.jpg";
 import pushup2 from "../../img/pushups/pushup2.jpg";
 import pushup3 from "../../img/pushups/pushup3.jpg";
-import pushup4 from "../../img/pushups/pushup4.jpg";
-import pushup5 from "../../img/pushups/pushup5.jpg";
-import pushup6 from "../../img/pushups/pushup6.jpg";
-
 
 import { motion, useAnimation, useTransform, useViewportScroll } from "framer-motion";
 
@@ -70,17 +66,14 @@ export default function Pushups(): JSX.Element {
 			<div className="tile is-3 is-vertical is-parent is-hidden-mobile">
 				<motion.div className="tile is-child box" initial={slideLeft(pushup1)} animate={slideIn} transition={transition} />
 				<motion.div className="tile is-child box" initial={slideLeft(pushup3)} animate={slideIn} transition={transition} />
-				{/* <motion.div className="tile is-child box" initial={slideLeft(pushup3)} animate={slideIn} transition={transition} /> */}
 			</div>
 			<motion.div className="tile is-parent" initial={{ scale: 0, opacity: 0 }} animate={zoomIn} transition={transition}>
 				<div className="tile is-child box video">
-					<iframe className="embed" src="https://www.youtube-nocookie.com/embed/lM02vNMRRB0?controls=0&autoplay=1&modestbranding=1&start=1279&amp" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+					<iframe className="embed" src="https://www.youtube-nocookie.com/embed/RzztB6jAWQQ?controls=0&modestbranding=1&amp" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
 			</motion.div>
 			<div className="tile is-3 is-vertical is-parent is-hidden-mobile">
 				<motion.div className="tile is-child box" initial={slideRight(pushup2)} animate={slideIn} transition={transition} />
-				{/* <motion.div className="tile is-child box" initial={slideRight(pushup5)} animate={slideIn} transition={transition} /> */}
-				{/* <motion.div className="tile is-child box" initial={slideRight(pushup6)} animate={slideIn} transition={transition} /> */}
 			</div>
 		</div>
 	</div>;

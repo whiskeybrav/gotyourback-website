@@ -6,8 +6,8 @@ import "./Banner.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
+import bg from "../../img/bg.jpg";
 import logo from "../../img/got-your-back-cropped.png";
-
 
 export default function Banner(): JSX.Element {
 	const hashtag = useAnimation();
@@ -33,7 +33,7 @@ export default function Banner(): JSX.Element {
 		sequence();
 	});
 
-	return <div className="hero is-fullheight is-dark banner">
+	return <div className="hero is-fullheight is-dark banner" style={{ backgroundImage: `url(${bg})` }}>
 		<div className="hero-body">
 			<div className="container has-text-centered">
 				<motion.img initial={{ scale: 0, opacity: 0 }} src={logo} animate={logoAnimation} transition={{ type: "tween" }} alt="" className="logo-top" />
