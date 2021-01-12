@@ -49,7 +49,7 @@ export default function AboutIntro(): JSX.Element {
 		<div className="container">
 			<div className="columns">
 				<div className="column">
-					<motion.h2 className="is-large-numeral" initial={{ opacity: 0 }} animate={column1NumberAnimation}>10</motion.h2>
+					<motion.h2 className="is-large-numeral" initial={{ opacity: 0 }} animate={column1NumberAnimation}>5</motion.h2>
 					<motion.h3 className="title is-size-4 has-text-light" initial={{ opacity: 0 }} animate={column1TitleAnimation}>Pushups</motion.h3>
 				</div>
 				<div className="column">
