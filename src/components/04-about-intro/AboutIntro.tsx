@@ -1,4 +1,3 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
 import { motion, useAnimation, useTransform, useViewportScroll } from "framer-motion";
 import * as React from "react";
 import { useRefScrollProgress } from "../../util";
@@ -40,7 +39,7 @@ export default function AboutIntro(): JSX.Element {
 	const scale = useTransform(scrollYProgress, [logoContainerScrollInfo.start, logoContainerScrollInfo.end], [0, 1]);
 
 
-	if (scale.get() > 0.7 && hookedYPostion != 0 && !hasAnimated) {
+	if (scale.get() > 0.3 && hookedYPostion != 0 && !hasAnimated) {
 		setHasAnimated(true);
 		sequence();
 	}
@@ -62,14 +61,6 @@ export default function AboutIntro(): JSX.Element {
 					<motion.h3 className="title is-size-4 has-text-light" initial={{ opacity: 0 }} animate={column3TitleAnimation}>People you're grateful for</motion.h3>
 				</div>
 			</div>
-			<motion.hr initial={{ opacity: 0 }} animate={textAnimation} />
-			<motion.div className="intro-list is-size-3" initial={{ opacity: 0 }} animate={textAnimation}>
-				<ol>
-					<li>Do 10 pushups with an object on your back</li>
-					<li>Tag &amp; challenge 3 people you're grateful for</li>
-					<li>Tag &amp; @whiskeybravo and #gotyourback</li>
-				</ol>
-			</motion.div>
 		</div>
 	</div>;
 }

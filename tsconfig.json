@@ -11,7 +11,9 @@
         "allowJs": true,
         "jsx": "react",
         "lib": ["ES2015", "DOM"],
-        "typeRoots": ["./node_modules/@types", "./typings"]
+        "typeRoots": ["./node_modules/@types", "./typings"],
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true
     },
     "include": [
         "./src/**/*"
