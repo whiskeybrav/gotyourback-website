@@ -2,7 +2,7 @@ import { faSync, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 
-import PushupItems from '../../../pushup-items.json'
+import PushupItems from "../../../pushup-items.json";
 
 interface GifModalProps {
 	isShown: boolean
@@ -25,7 +25,7 @@ export default function GifModal(props: GifModalProps): JSX.Element {
 				<button className="delete" aria-label="close" onClick={() => props.setIsShown(false)}></button>
 			</header>
 			<section className="modal-card-body has-text-centered">
-				<p>You should do pushups with (a/an)</p>
+				<p>You should do pushups with</p>
 				<h2 className="is-size-3">{item}</h2>
 				<p>on your back</p>
 			</section>

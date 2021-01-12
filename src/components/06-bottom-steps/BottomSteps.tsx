@@ -1,6 +1,7 @@
 import * as React from "react";
+import "./BottomSteps.sass";
 
-export default (): JSX.Element => <div className="section has-background-dark has-text-light">
+export default (): JSX.Element => <div className="section BottomSteps has-text-light">
 	<div className="container has-text-centered is-size-2">
 		<ul>
 			<li>1. Do 10 pushups with an object on your back</li>

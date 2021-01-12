@@ -45,7 +45,7 @@ export default function AboutIntro(): JSX.Element {
 	}
 
 
-	return <div className="section has-background-dark has-text-light AboutIntro" ref={ref}>
+	return <div className="section has-background-primary has-text-light AboutIntro" ref={ref}>
 		<div className="container">
 			<div className="columns">
 				<div className="column">
