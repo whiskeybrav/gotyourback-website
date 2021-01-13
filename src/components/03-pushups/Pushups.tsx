@@ -69,7 +69,7 @@ export default function Pushups(): JSX.Element {
 			</div>
 			<motion.div className="tile is-parent" initial={{ scale: 0, opacity: 0 }} animate={zoomIn} transition={transition}>
 				<div className="tile is-child box video">
-					<iframe className="embed" src="https://www.youtube-nocookie.com/embed/RzztB6jAWQQ?controls=0&modestbranding=1&amp" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+					<iframe className="embed" src="https://www.youtube-nocookie.com/embed/2s086TRPdfg?controls=0&modestbranding=1&amp" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
 			</motion.div>
 			<div className="tile is-3 is-vertical is-parent is-hidden-mobile">
