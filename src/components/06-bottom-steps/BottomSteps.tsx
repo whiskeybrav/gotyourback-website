@@ -6,7 +6,7 @@ export default (): JSX.Element => <div className="section BottomSteps has-text-l
 		<ul>
 			<li>1. Do 5 pushups with an object on your back</li>
 			<li>2. Tag &amp; challenge 3 people you're grateful for</li>
-			<li>3. Tag &amp; @whiskeybravo and #gotyourback</li>
+			<li>3. Tag @whiskeybravo and #gotyourback</li>
 		</ul>
 	</div>
 </div>;
